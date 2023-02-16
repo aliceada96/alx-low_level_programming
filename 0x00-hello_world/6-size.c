@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+ * main - prints the sizes of various types
+ *
+ * This code prints the sizes of various types on th computer it is compiled
+ *
+ * Return: always 0 (success)
+ */
+
 int main(void)
 {
 	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(char));
