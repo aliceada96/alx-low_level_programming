@@ -13,7 +13,7 @@
 int main(void)
 {
 
-	int n;
+	int n, last;
 
 
 
