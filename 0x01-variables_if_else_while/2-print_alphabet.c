@@ -10,14 +10,14 @@
 
 int main(void)
 {
-	int i = 97;
+	char alphabet = 'a';
 
-	while (i < 123)
+	while (alphabet <= 'z')
 	{
-		putchar(i);
-		i++;
+		putchar(alphabet);
+		alphabet++;
 	}
-	putchar(10);
+	putchar('\n');
 
 	return (0);
 }

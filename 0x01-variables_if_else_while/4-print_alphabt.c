@@ -10,17 +10,17 @@
 
 int main(void)
 {
-	int i = 97;
+	char alpha = 'a';
 
-	while (i < 123)
+	while (alpha <= 'z')
 	{
-		if (i != 101 && i != 113)
+		if (alpha != 'e' && alpha != 'q')
 		{
-			putchar(i);
+			putchar(alpha);
 		}
-		i++;
+		alpha++;
 	}
-	putchar(10);
+	putchar('\n');
 
 	return (0);
 }

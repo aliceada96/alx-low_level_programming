@@ -10,24 +10,22 @@
 
 int main(void)
 {
-	int i, j;
+	char alpha = 'a';
+	char alphaCaps = 'A';
 
-	i = 97;
-	j = 65;
-
-	while (i < 123)
+	while (alpha <= 'z')
 	{
-		putchar(i);
-		i++;
+		putchar(alpha);
+		alpha++;
 	}
 
-	while (j < 91)
+	while (alphaCaps <= 'Z')
 	{
-		putchar(j);
-		j++;
+		putchar(alphaCaps);
+		alphaCaps++;
 	}
 
-	putchar(10);
+	putchar('\n');
 
 	return (0);
 }

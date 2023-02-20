@@ -10,14 +10,13 @@
 
 int main(void)
 {
-	int i = 122;
+	char alpha;
 
-	while (i > 96)
+	for (alpha = 'z'; alpha >= 'a'; alpha--)
 	{
-		putchar(i);
-		i--;
+		putchar(alpha);
 	}
-	putchar(10);
+	putchar('\n');
 
 	return (0);
 }
