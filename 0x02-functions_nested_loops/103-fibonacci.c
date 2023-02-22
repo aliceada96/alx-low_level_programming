@@ -2,7 +2,7 @@
 /**
  * main - finds and prints the sum of even-valued terms in a fibonacci sequence
  * whose values do not exceed 4000000.
- * 
+ *
  * Return: always 0
  */
 int main(void)
