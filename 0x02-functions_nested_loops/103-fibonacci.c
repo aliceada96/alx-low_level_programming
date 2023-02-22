@@ -6,23 +6,24 @@
  */
 int main(void)
 {
-	long int a, b, sum, even_sum;
-
-	a = 0;
-	b = 1;
-
-	while (sum > 4000000)
+	long a = 1;
+	long b = 2;
+	long next_value = 0;
+	long even_sum = 2;
+	
+	
+	while (next_value <  4000000)
 	{
-		sum = a + b;
-		if (sum % 2 == 0)
+		next_value = a + b;
+		if (next_value % 2 == 0)
 		{
-			even_sum += sum;
+			even_sum += next_value;
 		}
 		a = b;
-		b = sum;
+		b = next_value;
 
 	}
-	printf("%li, ", even_sum);
+	printf("%li\n, ", even_sum);
 
 	return (0);
 }
