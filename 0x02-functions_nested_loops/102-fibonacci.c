@@ -8,15 +8,12 @@
  */
 int main(void)
 {
-	long int a;
-	long int b;
+	long int a = 1;
+	long int b = 2;
 	long int sum;
 	int count;
 
-	a = 0;
-	b = 1;
-	sum = 0;
-	count = 0;
+	printf("%li, %li, ", a, b);
 
 	for (count = 0; count < 49; count++)
 	{
@@ -26,9 +23,7 @@ int main(void)
 		a = b;
 		b = sum;
 	}
-
 	sum = a + b;
-	printf("%li, ", sum);
-
+	printf("%li\n", sum);
 	return (0);
 }
