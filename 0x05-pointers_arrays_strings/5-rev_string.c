@@ -9,24 +9,16 @@
 
 void rev_string(char *s)
 {
-	int j, half, max;
-	char start, end;
+	int length = 0, adress = 0;
+	char temp;
 
-	j = 0;
+	while (s[adress++])
+		length++;
 
-	while (s[j] != '\0')
+	for (adress = length - 1, adress >= length / 2; adress--)
 	{
-		j++;
-	}
-	max = j - 1;
-	half = max / 2;
-
-	while (half >= 0)
-	{
-		start = s[max - half];
-		end = s[half];
-		s[half] = first;
-		s[max - half] = end;
-		half--;
+		temp = s[adress];
+		s[adress] = s[length - adress - 1];
+		s[lenth - adress - 1] = temp;
 	}
 }

@@ -6,9 +6,10 @@
  *
  * Return: void
  */
+
 void print_rev(char *s);
 {
-	int n = 2;
+	int n = 0;
 
 	while (s[n] != '\0')
 	{
