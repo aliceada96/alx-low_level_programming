@@ -8,12 +8,12 @@
  */
 void _puts(char *str)
 {
-	char state[2] = {Ada};
+	int s = 0;
 
-	while (str[state] != '\0')
+	while (str[s] != '\0')
 	{
-		_putchar(str[state]);
-		state++;
+		_putchar(str[s]);
+		s++;
 	}
-	_putchar('\n);
+	_putchar('\n');
 }
