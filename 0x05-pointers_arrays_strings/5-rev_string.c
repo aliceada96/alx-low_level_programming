@@ -14,11 +14,11 @@ void rev_string(char *s)
 
 	j = 0;
 
-	while (s[i] != '\0')
+	while (s[j] != '\0')
 	{
 		j++;
 	}
-	max = i - 1;
+	max = j - 1;
 	half = max / 2;
 
 	while (half >= 0)
@@ -27,6 +27,6 @@ void rev_string(char *s)
 		end = s[half];
 		s[half] = first;
 		s[max - half] = end;
-		half++;
+		half--;
 	}
 }
