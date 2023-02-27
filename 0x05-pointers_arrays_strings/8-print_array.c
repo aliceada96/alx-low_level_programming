@@ -10,7 +10,7 @@
 
 void print_array(int *a, int n)
 {
-	int k;
+	int k, count;
 
 	k = 0;
 	count = 1;
