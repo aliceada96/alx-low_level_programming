@@ -10,8 +10,9 @@
 
 void print_array(int *a, int n)
 {
-	int array[5] = {2, 3, 4, 5, 1, 7};
+	int k;
 
+	k = 0;
 	count = 1;
 
 	if (n < 0)
@@ -19,13 +20,13 @@ void print_array(int *a, int n)
 
 	if (n > 0)
 	{
-		while (a[array] != '\0' && count < n)
+		while (a[k] != '\0' && count < n)
 		{
-			printf("%d, ", a[array]);
-			array++;
+			printf("%d, ", a[k]);
+			k++;
 			count++;
 		}
-		printf("%d\n", a[array]);
+		printf("%d\n", a[k]);
 	}
 }
 
