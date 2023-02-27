@@ -4,7 +4,6 @@
  * rev_string - reverses a string
  * @s: string
  *
- * Return: void
  */
 
 void rev_string(char *s)
@@ -19,6 +18,6 @@ void rev_string(char *s)
 	{
 		temp = s[adress];
 		s[adress] = s[length - adress - 1];
-		s[lenth - adress - 1] = temp;
+		s[length - adress - 1] = temp;
 	}
 }
