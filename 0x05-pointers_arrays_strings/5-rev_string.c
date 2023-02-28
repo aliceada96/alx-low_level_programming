@@ -26,7 +26,7 @@ void rev_string(char *s)
 			*b = *e;
 			*e = temp;
 
-			b--;
-			e++;
+			c--;
+			b++;
 		}
 }
