@@ -8,7 +8,6 @@
  *
  * Return: pointer to resulting dest string
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
 	int b = 0;
