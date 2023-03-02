@@ -5,9 +5,8 @@
  * @s1: pointer to first string
  * @s2: pointer to second string
  *
- * Return: 0 if the strings are equal,-ve difference of the 1st unmatched
- * characters if str1<str2,negative difference of the first
- * unmatched characters if str1>str2
+ * Return: 0 if the strings are equal, positive or negative difference if
+ * they are not
  */
 int _strcmp(char *s1, char *s2)
 {
