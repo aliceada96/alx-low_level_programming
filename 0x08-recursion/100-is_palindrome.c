@@ -22,13 +22,14 @@ int check_palindrome(char *s, int first, int last)
 	{
 		return (check_palindrome(s, first + 1, last - 1));
 	}
+	return (1);
 }
 
 /**
  * _strlen_recursion - Returns the length of string s
  * @s: string whose length is to be determined
  *
- * Return: length of s
+ * Return: length of sA
  */
 int _strlen_recursion(char *s)
 {
