@@ -2,7 +2,7 @@
 #define CALC_H
 
 /**
- * struct_op - struct op
+ * struct op - struct op
  *
  * @op: the operator
  * @f: function associated
