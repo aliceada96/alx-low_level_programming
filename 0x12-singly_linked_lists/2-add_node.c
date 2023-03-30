@@ -4,7 +4,7 @@
 /**
  * add_node - adds a new node at the begining of the list
  * @head: pointer to pointer to head
- * @str: string to be duplicated
+ * @str: string to be added
  *
  * Return: adress of new element, else NULL if it fails
  */
@@ -22,7 +22,7 @@ list_t *add_node(list_t **head, const char *str)
 	dup = strdup(str);
 	if (dup == NULL)
 	{
-		free(dup);
+		free(new);
 		return (NULL);
 	}
 
