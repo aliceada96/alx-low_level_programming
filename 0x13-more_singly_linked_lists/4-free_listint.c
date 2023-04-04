@@ -5,7 +5,7 @@
  * free_listint - frees the list
  * @head: pointer to the adress of the head
  */
-void free_listint(listint_t **head)
+void free_listint(listint_t *head)
 {
 	listint_t *temp;
 
