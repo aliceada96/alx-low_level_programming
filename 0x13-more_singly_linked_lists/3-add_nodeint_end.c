@@ -24,10 +24,10 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		*head = temp;
 	else
 	{
-		last = *head;
-		while (last->next != NULL)
-			last = last->next;
-		last->next = temp;
+		tail = *head;
+		while (tail->next != NULL)
+			tail = tail->next;
+		tail->next = temp;
 	}
 
 	return (*head);
