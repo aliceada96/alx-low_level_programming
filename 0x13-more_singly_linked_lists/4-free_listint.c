@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * free_listint2 - frees the list
+ * free_listint - frees the list
  * @head: pointer to the adress of the head
  */
-void free_listint2(listint_t **head)
+void free_listint(listint_t **head)
 {
 	listint_t *temp;
 
