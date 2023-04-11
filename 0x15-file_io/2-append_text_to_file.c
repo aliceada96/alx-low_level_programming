@@ -10,19 +10,21 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int makeFile, i = 0;
+	int op, wr, i = 0;
 
 	if (filename == NULL)
 		return (-1);
 
-	makeFile = open(filename, O_WRONLY | O_APPEND);
-
-	if (text_content != NULL)
-	len = write(makeFile, text_content, text_content[i]);
-	close(makeFile);
+	while (text_content != NULL)
+	{
+		i++;
+		op = open(filename, O_WRONLY | O_APPEND);
+		wr = write(makeFile, text_content, text_content[i]);
 
 	if (makeFile == -1 || i == -1)
 		return (-1);
+
+	close(op);
 
 	return (1);
 }
