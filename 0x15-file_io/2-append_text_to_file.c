@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * append_text_to_file - appends texts at the end of a file
@@ -14,10 +15,10 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 
-	makeFile = open(filename, O_WRONLY | 0_APPEND);
+	makeFile = open(filename, O_WRONLY | O_APPEND);
 
 	if (text_content != NULL)
-		len = write(makeFile, text_content, text_content[i]);
+	len = write(makeFile, text_content, text_content[i]);
 	close(makeFile);
 
 	if (makeFile == -1 || i == -1)
