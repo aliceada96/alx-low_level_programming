@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * binary_to_uint - converts a binary no to unsigned int
  * @b: pointer to a string of 1s and 0s
@@ -29,7 +29,9 @@ unsigned int binary_to_uint(const char *b)
 			i = (i << 1) | 1;
 		}
 		else
+		{
 			return (0);
+		}
 	}
 
 	return (i);
