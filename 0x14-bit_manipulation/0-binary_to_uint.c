@@ -10,23 +10,24 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i = 0;
-	unsigned int product = 1;
 	int count;
+	unsigned int i = 0;
 
 	if (b == '\0')
 		return (0);
 
-	for (count = 0; b[count];)
-		count++;
-
-	for (count -= 1; count >= 0; count--)
+	for (count = 0; b[count] != '\0'; count++)
 	{
-		if (b[count] != '1' && b[count] != '0')
+		if (b[count] == '0')
+		{
+			i = i << 1;
+		}
+		else if (b[count] == '1')
+		{
+			i = (i << 1) | 1;
+		}
+		else
 			return (0);
-
-		i += (b[count] - '0') * product;
-		product *= 2;
 	}
 
 	return (i);
