@@ -17,11 +17,10 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		while (text_content[i])
-		{
+		for (i = 0; text_content[i];)
 			i++;
-		}
 	}
+
 	op = open(filename, O_WRONLY | O_APPEND);
 	wr = write(makeFile, text_content, i);
 
