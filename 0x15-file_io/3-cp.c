@@ -32,9 +32,10 @@ int main(int argc, char *argv[])
 
 	while ((r = read(source, buffer, BUFFER_SIZE)) > 0)
 	{
-		if (dest == -1 || write(dest, buffer, r))
+		if (dest == -1 || write(dest, buffer, r) == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			close(source);
 			exit(99);
 		}
 
