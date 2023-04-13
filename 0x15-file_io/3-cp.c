@@ -30,9 +30,7 @@ int main(int argc, char *argv[])
 
 	dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	r = read(source, buffer, BUFFER_SIZE);
-
-	while (r > 0)
+	while ((r = read(source, buffer, BUFFER_SIZE)) > 0)
 	{
 		if (dest == -1 || write(dest, buffer, r))
 		{
