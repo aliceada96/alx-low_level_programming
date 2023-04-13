@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int dest, source, r;
-	char buffer[1024];
+	char buffer[BUFFER_SIZE];
 
 	if (argc != 3)
 	{
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 
 	dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	r = read(source, buffer, 1024);
+	r = read(source, buffer, BUFFER_SIZE);
 
 	while (r > 0)
 	{
