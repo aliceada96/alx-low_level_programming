@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""Returns """
 
 def island_perimeter(grid):
     """Return the perimeter grid.
